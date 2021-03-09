@@ -1,0 +1,87 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #fff;
+}
+.container{
+  max-width: 600px;
+  min-height: 100vh;
+  padding: 3rem;
+  margin: auto;
+  background-color: rgb(14, 61, 61);
+  background-color: #333333;
+}
+
+h2{
+  border-bottom: #fff solid 2px;
+  padding-bottom: 0.5rem;
+  margin: 1rem 0;
+}
+.add-task_input{
+  width: 80%;
+  border-radius: 5px;
+  border: none;
+  color: #000;
+  padding: 0.1rem 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 2.1rem;
+}
+.add-task_btn{
+  width: 15%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1.5rem;
+  height: 2rem;
+  color: #FF9900;
+}
+.tasks_ul{
+  list-style: none;
+}
+.tasks_ul li{
+  margin: 1.5rem 0;
+}
+.tasks_ul li input[type="checkbox"]{
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 5px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+.tasks_ul li p{
+  display: inline-block; 
+  width: calc(100% - 6rem);
+  font-size: 1.5rem;
+  margin: 1rem 2rem;
+}
+.undone-tasks_ul li p{
+  color: #FF9900;
+}
+.done-tasks_ul li p{
+  text-decoration: line-through;
+}
+.tasks_ul li input[type="text"]{
+  font-size: 1.5rem;
+  /* margin: 0.2rem 1rem; */
+  border-radius: 5px;
+  border: #FF9900 2px solid;
+  padding: 0.4rem 1rem;
+  background-color: transparent;
+  display: inline;
+  width: calc(100% - 5rem);
+  margin: calc(0.6rem - 2px) 1rem;
+}
+.undone-tasks_ul li input[type="text"]{
+  color: #FF9900;
+}
+.tasks_ul li button{
+  background-color: transparent;
+  border: none;
+  margin-right: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
